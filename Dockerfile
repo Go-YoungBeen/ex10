@@ -13,6 +13,6 @@ FROM tomcat:10-jdk17-temurin
 
 COPY --from=builder /app/target/*.war /usr/local/tomcat/webapps/ROOT.war
 
-EXPOSE 8080
+EXPOSE 8082
 
 CMD ["catalina.sh", "run"]
